@@ -1,7 +1,7 @@
 const btnEl = document.querySelector(".btn");
-const alertEl = document.querySelector(".alert")
-const iconEl = document.getElementById("icon")
-const inputEl = document.querySelector(".input")
+const alertEl = document.querySelector(".alert-container")
+const iconEl = document.querySelector(".fa-regular")
+const inputEl = document.querySelector("input")
 
 btnEl.addEventListener("click", ()=>{
     randomChars()
@@ -26,7 +26,7 @@ function randomChars(){
         password += chars.substring(randomNum, randomNum + 1)
     }
     inputEl.value = password;
-    alertEl.innerText = password + "copied";
+    alertEl.innerText = password + "    copied";
 }
 
 
